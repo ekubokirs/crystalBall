@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class BTCrystalBall;
+
 @interface BTViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+@property (strong, nonatomic) BTCrystalBall *crystalBall;
+
+-(void) makePrediction;
 
 @end
